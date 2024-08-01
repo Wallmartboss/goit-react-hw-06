@@ -1,4 +1,4 @@
-import Description from "./Description/Description";
+import Contacts from "./Contacts/Contacts";
 
 
 
@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <>
-      <Description />
+      <Contacts />
 
     </>
   );
