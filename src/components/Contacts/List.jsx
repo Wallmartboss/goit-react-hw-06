@@ -3,7 +3,6 @@ import { selectNameFilter } from '../../redux/filtersSlice';
 import { selectContacts, deleteContact } from '../../redux/contactsSlice';
 import s from './Contacts.module.css'
 
-
 const List = () => {
     const contacts = useSelector(selectContacts);
     const filter = useSelector(selectNameFilter);

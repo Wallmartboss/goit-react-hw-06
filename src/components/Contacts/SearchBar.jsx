@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import s from './Contacts.module.css';
 import { changeFilter } from '../../redux/filtersSlice';
 
-export const SearchBar = () => {
+const SearchBar = () => {
   const dispatch = useDispatch();
   return (
     <div className={s.wrapperSearch}>
@@ -10,3 +10,4 @@ export const SearchBar = () => {
     </div>
   );
 };
+export default SearchBar

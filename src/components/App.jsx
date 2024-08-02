@@ -1,14 +1,9 @@
 import Contacts from "./Contacts/Contacts";
 
-
-
 const App = () => {
-   
-
-  return (
+     return (
     <>
       <Contacts />
-
     </>
   );
 };
