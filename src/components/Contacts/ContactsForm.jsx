@@ -4,13 +4,12 @@ import { useDispatch } from 'react-redux';
 import { nanoid } from '@reduxjs/toolkit';
 import { addContact } from '../../redux/contactsSlice';
 
-const AddForm = () => {
+const ContactsForm = () => {
   const dispatch = useDispatch();
   const initialValues = { contact: '', id: '' };
 
   const onSubmit = (values, options) => {
     const newItem = { contact: values.contact, id: nanoid() };
-      console.log(newItem);
       dispatch(addContact(newItem));
       options.resetForm();
   };
@@ -25,4 +24,4 @@ const AddForm = () => {
     </div>
   );
 };
-export default AddForm
+export default ContactsForm

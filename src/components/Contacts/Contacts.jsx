@@ -1,14 +1,14 @@
-import { AddForm } from './AddForm';
-import List from './List';
-import { SearchBar } from './SearchBar';
+import ContactsForm from './ContactsForm';
+import Contact from './Contact';
+import SearchBox from './SearchBox';
 import s from './Contacts.module.css'; 
 
 const Contacts = () => {
     return (
         <div className={s.contactsWrapper}>
-            <AddForm />
-            <SearchBar />
-            <List />
+            <ContactsForm />
+            <SearchBox />
+            <Contact />
         </div>
     );
 };
