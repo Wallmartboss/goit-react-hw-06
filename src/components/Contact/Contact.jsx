@@ -4,8 +4,6 @@ import s from './Contact.module.css'
 
 const Contact = ({ item }) => {
   const dispatch = useDispatch();
-  console.log(item);
-  
    
   return (
     <div className={s.item}>
