@@ -1,10 +1,15 @@
-import Contacts from "./Contacts/Contacts";
+import ContactsForm from './ContactsForm/ContactsForm';
+import ContactList from './ContactList/ContactList';
+import SearchBox from './SearchBox/SearchBox';
+import s from './App.module.css'
 
 const App = () => {
      return (
-    <>
-      <Contacts />
-    </>
+        <div className={s.contactsWrapper}>
+            <ContactsForm />
+            <SearchBox />
+            <ContactList />
+        </div>
   );
 };
 
